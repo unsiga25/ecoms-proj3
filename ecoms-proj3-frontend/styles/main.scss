@@ -54,4 +54,8 @@
 @import "~bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 
+@import "products";
 
+.bg-main {
+    background: #0e1111;
+}

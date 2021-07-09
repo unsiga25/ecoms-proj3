@@ -1,0 +1,23 @@
+.product-card {
+    height: 500px;
+    max-height: 100%;
+}
+.product-price {
+    top: 100px;
+}
+@media (min-width: 768px) {
+    .product-card {
+        height: 400px;
+    }
+    .product-price {
+        top: 100px;
+    }
+}
+@media (min-width: 1200px) {
+    .product-price {
+        top: 100px;
+    }
+    .product-card {
+        height: 300px;
+    }
+}
