@@ -84,12 +84,14 @@ export default () => {
     }
 
     return (
-        <div>
+        <div className="container">
+        <div className="row">
+            <div className="col">
             <Head>
                 <title>Your Account</title>
                 <meta name="description" content="Your orders will be shown here" />
             </Head>
-            <h2>Account Page</h2>
+            <h2 className="text-center mb-5 mt-5">Account Page</h2>
             
             
             <h3>Your Orders</h3>
@@ -101,7 +103,9 @@ export default () => {
             ))}
             <hr />
             <p>Logged in as {user.email}</p>
-            <p><a href="#" onClick={logoutUser}>Logout</a></p>
+            <p><a href="#" onClick={logoutUser} className="logout text-decoration-none text-dark">Logout</a></p>
+        </div>
+        </div>
         </div>
     )
 

@@ -69,7 +69,7 @@ const Header = () => {
             <div>
               {user ? (
                 <Link href="/account">
-                  <a><img src="/user-icon.png" alt={user.email}/></a>
+                  <a><img src="/user-icon.png" alt={user.email} className="icon"/></a>
                 </Link>
               ) : (
                 <Link href="/login">

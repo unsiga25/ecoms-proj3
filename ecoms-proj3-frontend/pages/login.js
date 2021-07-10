@@ -15,7 +15,7 @@ export default function Login() {
   return (
    
       
-        <div className=" w-50 border-dark m-auto p-5" >
+        <div className=" w-50 login_box m-auto p-5" >
           <Head>
             <title className="text-center">Login</title>
             <meta

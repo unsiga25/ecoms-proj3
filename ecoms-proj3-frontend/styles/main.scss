@@ -55,6 +55,9 @@
 // scss-docs-end import-stack
 
 @import "products";
+@import "style";
+@import "account";
+@import "header";
 
 .bg-main {
     background: #0e1111;
