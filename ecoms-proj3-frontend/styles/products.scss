@@ -2,9 +2,19 @@
     height: 500px;
     max-height: 100%;
 }
+.navbar-brand{
+    font-weight: bold;
+    font-size: 30px;
+}
 .product-price {
     top: 100px;
 }
+.product-full-description{
+    min-height:calc(100vh - 320px) ;
+    width: 100%;
+    
+}
+
 @media (min-width: 768px) {
     .product-card {
         height: 400px;

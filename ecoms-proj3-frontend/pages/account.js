@@ -35,7 +35,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 import AuthContext from "../context/AuthContext";
-import { API_URL } from '../utils/urls'
+import { fromImageToUrl,API_URL } from '../utils/urls'
 
 const useOrders = (user, getToken) => {
     const [orders, setOrders] = useState([])
@@ -84,26 +84,41 @@ export default () => {
     }
 
     return (
-        <div className="container">
+        <div className="container account-box">
         <div className="row">
             <div className="col">
             <Head>
                 <title>Your Account</title>
                 <meta name="description" content="Your orders will be shown here" />
-            </Head>
-            <h2 className="text-center mb-5 mt-5">Account Page</h2>
+            </Head >
+            <div className="account_header d-flex align-items-center justify-content-center mb-5">
+            <h2 className="account-title me-auto ">Account Page</h2>
             
+            <a href="#" onClick={logoutUser} className="logout text-decoration-none text-dark mb-0">Logout</a>
+            </div>  
             
-            <h3>Your Orders</h3>
+            <h3 className="mb-3">Your Orders</h3>
             {loading && <p>Orders are Loading</p>}
             {orders.map(order => (
-                <div key={order.id}>
-                    {new Date(order.created_at).toLocaleDateString( 'en-EN' )} {order.product.name} ${order.total} {order.status}
+                <div className="col-12 mb-3 d-flex align-items-center account-product-title" key={order.id}>
+                     <img
+                  src={fromImageToUrl(order.product.image)}
+                  width={100}
+                  height={100}
+                  className="order_img img-fluid"
+                />
+                    <div className="me-3">
+                    <h4 className="product_name mb-1">{order.product.name} </h4>
+                    <div className="order_sub_content">QTY: {order.quantity} Size: {order.size}</div>
+                    <div className="order_sub_content d-flex"><p className="mb-0 me-3">${order.total}  <span>{order.Status}</span></p> </div>
+                    </div>
+                   
                 </div>
             ))}
             <hr />
-            <p>Logged in as {user.email}</p>
-            <p><a href="#" onClick={logoutUser} className="logout text-decoration-none text-dark">Logout</a></p>
+            <p >Logged in as {user.email}</p>
+           
+            
         </div>
         </div>
         </div>

@@ -13,10 +13,11 @@ const Header = () => {
   const { user } = useContext(AuthContext);
   return (
     <div>
+       
       <nav className="navbar navbar-expand-lg navbar-dark bg-main">
         <div className="container">
           <a className="navbar-brand" href="#">
-            Navbar
+           HypeLocker
           </a>
           <button
             className="navbar-toggler"
@@ -35,9 +36,11 @@ const Header = () => {
           >
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link href="/">
+                <a className="nav-link active" aria-current="page" href="/">
                   Home
                 </a>
+                </Link>         
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -80,13 +83,13 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <div className="container">
+      {/* <div className="container">
         {!isHome && (
           <a href="#" onClick={goBack}>
             {"<"}Back
           </a>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

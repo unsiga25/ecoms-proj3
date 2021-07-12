@@ -19,6 +19,7 @@
   
   span {
     font-weight: 700;
+    
   }
   
   .bg--color {
@@ -39,7 +40,7 @@
   }
   
   .margin-utl {
-    margin-left: -32px;
+    padding-left: 0px !important;
   }
   
   .bg-color {
@@ -50,9 +51,15 @@
     text-decoration: none;
     color: white;
   }
+  .li_utl:hover {
+    text-decoration: none;
+    color: #7D9494;
+  }
   
   .span-color {
     color: white;
+    text-decoration: none;
+    font-weight: 500;
   }
   
   .btn-bg-color {
@@ -61,9 +68,6 @@
     padding: 2.3px;
   }
   
-  .btn-bg-color:hover {
-    background-color: #ffc107;
-  }
   .input {
     max-width: 200px; 
     width: 100%;
@@ -80,3 +84,4 @@
     border-left: 1px solid white;
   }
   
+ 

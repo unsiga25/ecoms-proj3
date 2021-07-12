@@ -13,40 +13,41 @@ export default function Login() {
   };
 
   return (
-   
-      
-        <div className=" w-50 login_box m-auto p-5" >
-          <Head>
-            <title className="text-center">Login</title>
-            <meta
-              name="description"
-              content="Login here to be able to purchase"
-            />
-          </Head>
-
-          <h2 className="text-center mb-1">Login</h2>
-          <p className="form-text  text-center mb-5">
-            Powered by Magic.link
-          </p>
-          <form onSubmit={handleSubmit} className="d-flex flex-column">
-            <label
-              for="exampleFormControlInput1"
-              className="form-label "
-            >
-              Email address
-            </label>
-            <input
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              type="email"
-              placeholder="name@example.com"
-              className="mb-5 pt-1 pb-1 border-dark"
-              id="exampleFormControlInput1"
-            />
-            <button type="submit" className="btn btn-dark mb-5">
-              Log In
-            </button>
-          </form>
+          <div className="container">
+            <div calssName="row">
+              <div className="col-12 login_box m-auto p-3 mb-5 mt-5" >
+                <Head>
+                  <title >Login</title>
+                  <meta
+                    name="description"
+                    content="Login here to be able to purchase"
+                  />
+                </Head>
+                  <h2 className="text-center mb-1">Login</h2>
+                  <p className="form-text  text-center mb-5">
+                    Powered by Magic.link
+                  </p>
+                <form onSubmit={handleSubmit} className="d-flex flex-column">
+                  <label
+                    for="exampleFormControlInput1"
+                    className="form-label "
+                  >
+                    Email address
+                  </label>
+                  <input
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                    type="email"
+                    placeholder="name@example.com"
+                    className="mb-3 mb-md-5 pt-1 pb-1 border-dark"
+                    id="exampleFormControlInput1"
+                  />
+                  <button type="submit" className="btn btn-dark mb-5 ">
+                    Log In
+                  </button>
+                </form>
+              </div>
+            </div>
         </div>
      
   );

@@ -6,11 +6,14 @@ import { twoDecimals } from "../utils/format";
 
 export default function Home({products}) {
   return (
+    <>
+    <img src="/banner.jpg" alt="banner" className="banner w-100 mb-5 img-fluid"/>
     <div className="container p-3">
       <Head>
         <title>HypeLocker</title>
       </Head>
       <div className="row">
+      
         {products.map((product) => (
           <div
             key={product.name}
@@ -38,6 +41,7 @@ export default function Home({products}) {
         ))}
       </div>
     </div>
+    </>
   );
 }
 

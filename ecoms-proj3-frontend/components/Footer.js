@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <div className="bg-main p-4">
         <div className="container">
-          <div className="row">
+          <div className="row text-center text-md-start">
             <div className="col-12 col-lg-3 col-sm-6 d-flex flex-column">
               <span className="d-block span-color mb-1">QUICK LINKS</span>
               <ul className="margin-utl">
@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
             <div className="col-12 col-lg-3 col-sm-6 d-flex flex-column">
               <span className="d-block span-color mb-1">CONTACTS</span>
-              <div className="d-flex gap-1">
+              <div className="d-flex justify-content-center justify-content-md-start  gap-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -82,7 +82,7 @@ const Footer = () => {
                 <p className="span-color pt-2">Manila, Philippines</p>
               </div>
 
-              <div className="d-flex gap-1">
+              <div className="d-flex justify-content-center justify-content-md-start gap-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -96,7 +96,7 @@ const Footer = () => {
                 <p className="span-color pt-2">+63(987)-654-3210</p>
               </div>
 
-              <div className="d-flex gap-1">
+              <div className="d-flex justify-content-center justify-content-md-start gap-1 ">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ const Footer = () => {
             </div>
             <div className="col-12 col-lg-3 col-sm-6 d-flex flex-column">
               <span className="d-block span-color mb-1">KEEP IN TOUCH</span>
-              <div className="d-flex">
+              <div className="d-flex justify-content-center justify-content-md-start ">
                 <label htmlFor="email">
                   <input
                     className="input"
@@ -152,7 +152,7 @@ const Footer = () => {
                 <div className="mb-2">
                   <span className="span-color mb-3">Follow Us</span>
                 </div>
-                <ul className="d-flex margin-utl gap-3">
+                <ul className="d-flex justify-content-md-start justify-content-center margin-utl gap-3">
                   <li>
                   <a href="#">
                       <svg
@@ -216,9 +216,9 @@ const Footer = () => {
           <div className="row border-top">
             <div className="col-12">
               <div className="d-flex gap-2 mt-2 justify-content-center justify-content-md-start">
-                <span className="span-color">Terms and conditions</span>
-                <span className="span-color border-utl">Privacy</span>
-                <span className="span-color">2021</span>
+              <a className="span-color" href="#">Terms and Conditions</a>
+              <a className="span-color border-utl" href="#">Privacy</a>
+              <a className="span-color" href="#">2021</a>
               </div>
             </div>
           </div>

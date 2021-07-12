@@ -1,11 +1,37 @@
-a.logout:hover{
-    text-decoration: none;
-    color: black;
+.account-box{
+    min-height:calc(100vh - 320px) ;
+    
 }
 
-.login_box{
-    max-width: 600px;   
+.account_header{
+    height:80px;
 }
+.order_img{
+    margin-right: 20px;
+}
+.product_name{
+    font-size: 16px;
+}
+.purchase_date{
+    font-size: 14px;
+}
+.account-product-title{
+    color: #3d3d3d !important;;
+}
+.order_sub_content{
+    font-size: 14px;
+    color:#7e7c7c;
+}
+.logout{
+    font-weight: bold!important;
+}
+
+.logout:hover{
+    text-decoration: underline!important;
+    
+}
+
+
 .btn-dark:hover{
     background-color: white;
     color: black;
